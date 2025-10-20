@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green IT – Nachhaltigkeit</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f8f5;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background: #2c6e49;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #2c6e49;
+    }
+    .lowtech {
+      background: #e8f5e9;
+      padding: 1rem;
+      border-left: 4px solid #2c6e49;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Green IT – Nachhaltigkeit in der IT</h1>
+  </header>
+
+
+  <main>
+    <section>
+      <h2>Willkommen bei Green IT</h2>
+      <p>Diese Seite nutzt eine Stimme, um dich kurz zu begrüßen.</p>
+
+      <audio id="greenitSpeaker" autoplay>
+        <source src="./tts/greenit_intro.mp3" type="audio/mpeg">
+        Dein Browser unterstützt kein Audio.
+      </audio>
+
+      <script>
+        const speaker = document.getElementById("greenitSpeaker");
+        speaker.volume = 0.7;
+        document.addEventListener("click", () => {
+          if (speaker.paused) speaker.play();
+        });
+      </script>
+    </section>
+    
+    <section>
+      <h2>Was ist Green IT?</h2>
+      <p>Green IT umfasst alle Maßnahmen, die Informations- und Kommunikationstechnologien nachhaltiger machen – von der Hardware über Software bis zu Rechenzentren.</p>
+      <p> Im Vergleich zur Software ist die Hardware heute dagegen sehr effizient. Ein modernes
+          Notebook verbraucht deutlich weniger Energie als ein alter Tower-PC mit Röhrenbildschirm.
+          Schauen wir aber dorthin, wo die Daten gespeichert werden, wandelt sich das Bild.
+          Schätzungen zur Folge verbrauchen die Rechenzentren in Deutschland im Jahr so viel Strom
+          wie die Millionenstadt Berlin. Weltweit stieg der Stromverbrauch von Rechenzentren um
+          70%. </p>
+        
+    </section>
+
+    <section>
+      <h2>Green Coding</h2>
+      <p>Green Coding setzt auf drei Architekturprinzipien auf:</p>
+      <ul>
+        <li>Herunterfahren bei Nichtgebrauch</li>
+        <li>Kein unnötiger Verbrauch</li>
+        <li>Fokus auf Zeit & Energie</li>
+      </ul>
+      <img src="./img/greencoding_architecture.png">
+      <h3>1. Grüne Logik</h3>
+      <ul>
+        <li><strong>Nutzenorientierter visueller Inhalt:</strong> Geben Sie den Nutzern schneller das, was sie wollen. Das steigert die Kundenzufriedenheit und spart zudem Zeit und Energie. </li>
+        <li><strong>Zero-Waste-Code:</strong> Entfernen Sie toten Code mit Tree-Shaking-Engines und weisen Sie den Entwicklern Größen- und Leistungsbudgets zu. </li>
+        <li><strong>Ressourcen mit geringem CO2-Fußabdruck:</strong> Verwenden Sie einfachere Dateiformate, effiziente APIs und optimierte Bildpakete. </li>
+        <li><strong>Nutzungshäufigkeit und Nähe:</strong> Progressive Web Applications (PWAs) und Content Delivery Networks (CDNs) können den Ablauf von Inhalten verwalten und die physische Entfernung zwischen Server und Nutzer verringern. </li>
+      </ul>
+
+      <h3>2. Grüne Methotik</h3>
+      <ul>
+        <li><strong>Schnelles Feedback, bessere Entscheidungen:</strong> Agile und schlanke Methoden erleichtern die Anpassung von Software zur Steigerung der Effizienz, während kontinuierliche Integration und kontinuierliche Lieferung es ermöglichen, die Auswirkungen jeder einzelnen Entwicklungsentscheidung zu visualisieren. </li>
+        <li><strong>Wiederverwendbare Ergebnisse:</strong> Im Mittelpunkt nachhaltiger Softwareentwicklung steht das Ziel, die Ergebnisse von GreenCoding-Projekten weithin verfügbar zu machen, innerhalb einer Unternehmensorganisation und auch darüber hinaus. </li>       
+      </ul>
+
+      <h3>3. Grüne Plattform</h3>
+      <ul>
+        <li><strong>Optimale Auslastung:</strong>Eine niedrige Auslastung ist in der Regel das Ergebnis einer zu hohen Schätzung in der Planungsphase und kann dazu führen, dass Systeme viel größer sind, als sie es sein müssten. </li>
+        <li><strong>Präzise Konfiguration:</strong>Ein Blick in die Konfigurationsoptionen kann Ineffizienzen aufdecken, zum Beispiel HTTP2- oder gzip-Komprimierungseinstellungen, die nie aktiviert wurden. </li>
+        <li><strong>Ganzheitliche Metriken:</strong> Neben dem Energiebedarf von Servern sollten die Metriken auch die „versteckte“ Infrastruktur wie persönliche Geräte umfassen.</li>
+      </ul>
+
+    </section>
+
+    <section>
+      <h2>KI & Nachhaltigkeit</h2>
+      <p>Das Training moderner Modelle verursacht hohe CO₂-Emissionen. Inferenz pro Anfrage ist vergleichsweise energiearm, summiert sich aber bei Milliarden Anfragen.</p>
+      <p>Ansatzpunkte: Effizientere Modelle, sparsameres Training, Nutzung erneuerbarer Energien.</p>
+
+    </section>
+
+    <section>
+      <h2>Permacomputing</h2>
+      <div class="lowtech">
+        <p>Ansatz, inspiriert von der Permakultur: Weniger ist mehr. Effizienz, Wiederverwendung und clevere Hacks anstelle von ständigem Wachstum.</p>
+      </div>
+      <ul>
+        <li>Alte Hardware wiederverwenden</li>
+        <li>Software schlank halten</li>
+        <li>Reparieren statt wegwerfen</li> 
+    </section>
+
+    <section>
+      <h2>Solar Powered Website</h2>
+      <p>Beispiel Low-Tech Magazine: statische Seiten, minimales Design, Server mit 1–2 Watt Leistung, betrieben durch ein kleines Solarpanel mit Batterie.</p>
+      <img src="./img/lowtechmagazine_solar.png">
+
+    </section>
+
+    <section>
+      <h2>KI-Tool: edge-tts</h2>
+      <p>Text-To-Speech Monolog einer Künstlichen Intelligenz, ermöglicht durch <a>href:</a></p>
+      <audio controls>
+        <source src="./tts/podcast_monolog.mp3" type="audio/mpeg">
+        Dein Browser unterstützt kein Audio.
+      </audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Green IT Projekt – Nachhaltigkeit durch Technik</p>
+  </footer>
+</body>
+</html>
