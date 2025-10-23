@@ -27,7 +27,7 @@
     section {
       margin-bottom: 2rem;
     }
-    h2 {
+    h2, h3, strong, a {
       color: #2c6e49;
     }
     .lowtech {
@@ -35,6 +35,20 @@
       padding: 1rem;
       border-left: 4px solid #2c6e49;
     }
+    .solar-img {
+      max-width: 100%;       
+      height: auto;          
+      float: right;          
+      margin: 0 0 1rem 1rem; 
+      max-height: 150px;     
+    }
+    .center { 
+      display: block; 
+      margin: 0.75rem auto; 
+      max-width: 100%; 
+      height: auto; 
+    }
+    
   </style>
 </head>
 <body>
@@ -45,7 +59,7 @@
 
   <main>
     <section>
-      <h2>Willkommen bei Green IT</h2>
+      <h2>Willkommen beim Handout der Green-IT Präsentation!</h2>
       <p>Diese Seite nutzt eine Stimme, um dich kurz zu begrüßen.</p>
 
       <audio id="greenitSpeaker" autoplay>
@@ -70,19 +84,21 @@
           Schauen wir aber dorthin, wo die Daten gespeichert werden, wandelt sich das Bild.
           Schätzungen zur Folge verbrauchen die Rechenzentren in Deutschland im Jahr so viel Strom
           wie die Millionenstadt Berlin. Weltweit stieg der Stromverbrauch von Rechenzentren um
-          70%. </p>
-        
+          70%. </p>     
     </section>
 
     <section>
-      <h2>Green Coding</h2>
+      <h2><a href="https://www.gft.com/de/de/insights/greencoding" target="_blank" rel="noopener noreferrer">Green Coding</a></h2>
       <p>Green Coding setzt auf drei Architekturprinzipien auf:</p>
       <ul>
         <li>Herunterfahren bei Nichtgebrauch</li>
         <li>Kein unnötiger Verbrauch</li>
         <li>Fokus auf Zeit & Energie</li>
       </ul>
-      <img src="./img/greencoding_architecture.png">
+      <style>
+        
+      </style>
+      <img src="./img/greencoding_architecture.png" class="center" alt="Greencoding Architektur">
       <h3>1. Grüne Logik</h3>
       <ul>
         <li><strong>Nutzenorientierter visueller Inhalt:</strong> Geben Sie den Nutzern schneller das, was sie wollen. Das steigert die Kundenzufriedenheit und spart zudem Zeit und Energie. </li>
@@ -110,11 +126,11 @@
       <h2>KI & Nachhaltigkeit</h2>
       <p>Das Training moderner Modelle verursacht hohe CO₂-Emissionen. Inferenz pro Anfrage ist vergleichsweise energiearm, summiert sich aber bei Milliarden Anfragen.</p>
       <p>Ansatzpunkte: Effizientere Modelle, sparsameres Training, Nutzung erneuerbarer Energien.</p>
-
+      <p>Website zum Berechnen des Energiebedarfs: <a href="https://mlco2.github.io/impact/#compute">ML CO2 Impact</a></p>
     </section>
 
     <section>
-      <h2>Permacomputing</h2>
+      <h2><a href="https://permacomputing.net/" target="_blank" rel="noopener noreferrer">Permacomputing</a></h2>
       <div class="lowtech">
         <p>Ansatz, inspiriert von der Permakultur: Weniger ist mehr. Effizienz, Wiederverwendung und clevere Hacks anstelle von ständigem Wachstum.</p>
       </div>
@@ -125,24 +141,69 @@
     </section>
 
     <section>
-      <h2>Solar Powered Website</h2>
-      <p>Beispiel Low-Tech Magazine: statische Seiten, minimales Design, Server mit 1–2 Watt Leistung, betrieben durch ein kleines Solarpanel mit Batterie.</p>
-      <img src="./img/lowtechmagazine_solar.png">
-
+      <img src="./img/solar-panel-on-roofdeck.jpg" alt="Solar Panel auf Dach" class="solar-img" />
+      <h2><a href="https://solar.dri.es/" target="_blank" rel="noopener noreferrer">Solar Powered Website</a></h2>
+      <p>Beispiel Low-Tech Magazine: statische Seiten, minimales Design, Server mit 1–2 Watt Leistung, betrieben durch ein kleines Solarpanel mit Batterie.</p>   
     </section>
 
     <section>
-      <h2>KI-Tool: edge-tts</h2>
-      <p>Text-To-Speech Monolog einer Künstlichen Intelligenz, ermöglicht durch <a>href:</a></p>
+      <h2>Energieeffizienz und Ressourcenmanagement</h2>
+      <p>Rechenzentren setzen auf effiziente Kühlung, etwa durch freie Kühlung, Flüssigkeitskühlung und die Trennung von heißen und kalten Luftströmen (Hot-Cold Aisle Containment).</p>
+      <p>Durch Virtualisierung und Konsolidierung werden Serverressourcen gebündelt, um den Hardwarebedarf zu reduzieren und Energie zu sparen.</p>
+      <p>Der Einsatz erneuerbarer Energien wird zunehmend wichtiger, ebenso wie die Optimierung der System-Auslastung.</p>
+    </section>
+
+    <section>
+      <h2>Nachhaltiger Hardware-Lebenszyklus</h2>
+      <ul>
+        <li>Nachhaltige Beschaffung mit Fokus auf Langlebigkeit und Reparierbarkeit</li>
+        <li>Verlängerung der Nutzungsdauer durch Reparatur statt Ersatz</li>
+        <li>Wiederverwendung (Refurbishment) gebrauchter Geräte</li>
+        <li>Fachgerechtes Recycling zur Rückgewinnung von Rohstoffen und Vermeidung von Schadstoffen</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Unternehmenskultur und Sensibilisierung</h2>
+      <p>Durch Schulungen und Bewusstseinsbildung werden Mitarbeiter für Green IT sensibilisiert.</p>
+      <p>Nutzer können durch Ausschalten nicht benötigter Geräte und Nutzung von Energiesparmodi aktiv zum Energiesparen beitragen.</p>
+      <p>Ein papierloses Büro und Nachhaltigkeitsziele als Unternehmensstrategie unterstützen den grünen Wandel.</p>
+    </section>
+
+    <section> 
+      <h2><a href="https://luckycloud.de/de/ratgeber/cloud-speicher/nachhaltiger-cloud-speicher" target="_blank" rel="noopener noreferrer">Green Cloud und Virtualisierung</a></h2>
+      <p>Grüne Cloud-Anbieter nutzen zu 100% erneuerbare Energien und setzen auf modulare, flexible Systeme, die Serverressourcen nur bei Bedarf aktivieren.</p>
+      <p>Datenschutz, DSGVO-Konformität und echte Energieeinsparungen sind Kernanforderungen nachhaltiger Cloud-Dienste, die Greenwashing vermeiden.</p>
+    </section>
+
+    <section>
+      <h2><a href="https://omr.com/de/reviews/contenthub/green-it" target="_blank" rel="noopener noreferrer">Tools für Green IT</a></h2>
+      <ul>
+        <li>Energieüberwachungssoftware (z.B. JouleX Energy Manager, PowerChute)</li>
+        <li>Virtualisierungstools (VMware vSphere, Microsoft Hyper-V, Oracle VM VirtualBox)</li>
+        <li>Cloud-Computing-Dienste (AWS, Microsoft Azure, Google Cloud)</li>
+        <li>Kühlmanagement-Tools (DCIM, CFD-Software)</li>
+        <li>Recycling- und E-Waste-Management (Sims Recycling Solutions, Dell Asset Recovery Services)</li>
+        <li>Green Hosting Anbieter (z.B. Manitu, All-inkl)</li>
+        <li>Nachhaltige Beschaffungstools (EcoVadis, Green Electronics Council EPEAT)</li>
+        <li>Schulungs- und Sensibilisierungsprogramme (Carbon Trust Standard, Energy Star Training)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>KI-Tool: <a href="https://github.com/rany2/edge-tts">edge-tts</a></h2>
+      <p>Text-To-Speech Monolog einer Künstlichen Intelligenz, lokal erstellt: </p>
+      </p>
       <audio controls>
         <source src="./tts/podcast_monolog.mp3" type="audio/mpeg">
         Dein Browser unterstützt kein Audio.
-      </audio>
+      </audio>    
+      <p><a href="https://github.com/pobe22/greenit/blob/main/tts/test.py">Skript zum Erstellen</a></p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Green IT Projekt – Nachhaltigkeit durch Technik</p>
+    <p>© 2025 Green IT Projekt - Beni und Ricardo</p>
   </footer>
 </body>
 </html>
